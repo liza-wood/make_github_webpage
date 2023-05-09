@@ -1,0 +1,85 @@
+/* heavily adapted from Desirée De Leon's tidymodels pkgdown CSS */
+/* https://github.com/tidyverse/tidytemplate/blob/master/inst/pkgdown/assets/tidymodels.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Jost&display=swap');
+
+
+:root {
+  --bunker: #272b30;
+  --ziggurat: #BED4E2;
+  --wedgewood: #437496;
+}
+
+/* my own settings ----------------------------------------- */
+p {
+  font-family: "Jost", Sans-Serif;
+}
+
+ul {
+  font-family: "Jost", Sans-Serif;
+}
+
+h1 {
+  font-family: "Abhaya Libre", Sans-Serif;
+}
+h2 {
+  font-family: "Abhaya Libre", Sans-Serif;
+}
+h3 {
+  font-family: "Abhaya Libre", Sans-Serif;
+}
+
+p.caption {
+  font-size: 0.75em;
+}
+
+figcaption {
+    text-align: right;
+}
+
+/* I want these to change link color but they don't--
+  --bunker: #272b30;
+  --ziggurat: #BED4E2;
+  --wedgewood: #437496;  */
+  
+a:link {
+  font-family: "Jost", Sans-Serif;
+  color: var(--wedgewood);
+  hover: var(--wedgewood)
+}
+
+a:hover {
+  color: var(--wedgewood)
+}
+
+code a {
+  color: var(--wedgewood);
+}
+
+code a:hover {
+  color: var(--bunker);
+}
+
+
+/* navbar ----------------------------------------------- */
+
+.navbar {
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+/* active behavior for navbar */
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .active > .nav-link {
+	background: var(--ziggurat);
+	color: var(--bunker);
+	border-radius: 0rem;
+}
+
+/* hover behavior for navbar */
+.navbar-light .navbar-nav .nav-item > .nav-link:hover {
+	background: none;
+}
+
+
+
