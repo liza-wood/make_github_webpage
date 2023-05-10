@@ -1,0 +1,29 @@
+# GitHub
+
+## Desktop: R Projects
+
+### Getting to know your directories 
+
+### R projects
+
+
+## Internet: GitHub Repositories 
+
+### 'Repos' as directories
+
+
+## Linking desktop to internet
+
+### Cloning 
+
+### Add-commit-push
+
+### Superpowers  
+
+**Version control**
+
+**Collaboration**
+
+**Project management**
+
+**Hosting websites**

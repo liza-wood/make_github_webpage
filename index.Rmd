@@ -1,10 +1,10 @@
 ---
-title: TITLE
-author: [YOUR NAME]
+title: Making websites with Rmd & GitHub
+author: Liza Wood
 date: "`r Sys.Date()`"
 
-github-repo: liza-wood/YOUR_REPO
-url: "https://liza-wood.github.io/YOUR_REPO/"
+github-repo: liza-wood/make_github_webpage
+url: "https://liza-wood.github.io/make_github_webpage/"
 
 site: "bookdown::bookdown_site"
 knit: "bookdown::render_book"
@@ -16,18 +16,32 @@ output:
       code_folding: show
       toc: 
         before: |
-          <li><a href="https://liza-wood.github.io/">
-            <img src="IMAGE_LINK" style="height: 100%; width: 100%; object-fit: contain" />
+          <li><a href="https://allisonhorst.com/">
+            <img src="imgs/rmd_hp.png" style="height: 100%; width: 100%; object-fit: contain" />
+            <figcaption style="font-size: 8px">Artwork by @allison_horst</figcaption>
           </a></li>
-          <li><a href="./" style="font-size: 16px">YOUR WORKSHOP TITLE</a></li>
+          <li><a href="./" style="font-size: 16px">Making websites with Rmd & GitHub</a></li>
         after: |
           </a>
         collapse: section
       sharing: no
-      view: https://github.com/liza-wood/YOUR_REPO/blob/master/%s
-      edit: https://github.com/liza-wood/YOUR_REPO/edit/master/%s
+      view: https://github.com/liza-wood/make_github_webpage/blob/master/%s
+      edit: https://github.com/liza-wood/make_github_webpage/edit/master/%s
 ---
 
 # Overview {-}
 
-YOUR DESCRIPTION, LEARNING GOALS, PREREQUISITES, ETC
+9-9:30 Check in on set-up  
+
+9:30-10:30 GitHub  
+
+10:30-10:45 Break 
+
+10:45-11:30 Pages with Rmd
+
+11:30-12:30 Website ingredients
+
+12:30-1:00 Lunch break
+
+1:00-2:00 Rendering 
+

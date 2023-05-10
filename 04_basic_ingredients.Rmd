@@ -1,0 +1,15 @@
+# Basic webpage ingredients
+
+## Site YAML
+
+## Index
+
+## Pages
+
+## Styling
+
+### HTML
+
+### CSS
+
+## Rendering

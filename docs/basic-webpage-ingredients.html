@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>4 Basic webpage ingredients | Making websites with Rmd &amp; GitHub</title>
+  <meta name="description" content="4 Basic webpage ingredients | Making websites with Rmd &amp; GitHub" />
+  <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="4 Basic webpage ingredients | Making websites with Rmd &amp; GitHub" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta name="github-repo" content="liza-wood/make_github_webpage" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="4 Basic webpage ingredients | Making websites with Rmd &amp; GitHub" />
+  
+  
+  
+
+<meta name="author" content="Liza Wood" />
+
+
+<meta name="date" content="2023-05-09" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="rmd.html"/>
+<link rel="next" href="blogdown-bookdown.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="styling.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="https://allisonhorst.com/">
+  <img src="imgs/rmd_hp.png" style="height: 100%; width: 100%; object-fit: contain" />
+  <figcaption style="font-size: 8px">Artwork by @allison_horst</figcaption>
+</a></li>
+<li><a href="./" style="font-size: 16px">Making websites with Rmd & GitHub</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Overview</a></li>
+<li class="chapter" data-level="1" data-path="set-up.html"><a href="set-up.html"><i class="fa fa-check"></i><b>1</b> Set-up</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="set-up.html"><a href="set-up.html#r-rstudio"><i class="fa fa-check"></i><b>1.1</b> R + RStudio</a></li>
+<li class="chapter" data-level="1.2" data-path="set-up.html"><a href="set-up.html#git"><i class="fa fa-check"></i><b>1.2</b> git</a></li>
+<li class="chapter" data-level="1.3" data-path="set-up.html"><a href="set-up.html#github"><i class="fa fa-check"></i><b>1.3</b> GitHub</a></li>
+<li class="chapter" data-level="1.4" data-path="set-up.html"><a href="set-up.html#ssh"><i class="fa fa-check"></i><b>1.4</b> SSH</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="github-1.html"><a href="github-1.html"><i class="fa fa-check"></i><b>2</b> GitHub</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="github-1.html"><a href="github-1.html#desktop-r-projects"><i class="fa fa-check"></i><b>2.1</b> Desktop: R Projects</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="github-1.html"><a href="github-1.html#getting-to-know-your-directories"><i class="fa fa-check"></i><b>2.1.1</b> Getting to know your directories</a></li>
+<li class="chapter" data-level="2.1.2" data-path="github-1.html"><a href="github-1.html#r-projects"><i class="fa fa-check"></i><b>2.1.2</b> R projects</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="github-1.html"><a href="github-1.html#internet-github-repositories"><i class="fa fa-check"></i><b>2.2</b> Internet: GitHub Repositories</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="github-1.html"><a href="github-1.html#repos-as-directories"><i class="fa fa-check"></i><b>2.2.1</b> ‘Repos’ as directories</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="github-1.html"><a href="github-1.html#linking-desktop-to-internet"><i class="fa fa-check"></i><b>2.3</b> Linking desktop to internet</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="github-1.html"><a href="github-1.html#cloning"><i class="fa fa-check"></i><b>2.3.1</b> Cloning</a></li>
+<li class="chapter" data-level="2.3.2" data-path="github-1.html"><a href="github-1.html#add-commit-push"><i class="fa fa-check"></i><b>2.3.2</b> Add-commit-push</a></li>
+<li class="chapter" data-level="2.3.3" data-path="github-1.html"><a href="github-1.html#superpowers"><i class="fa fa-check"></i><b>2.3.3</b> Superpowers</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="rmd.html"><a href="rmd.html"><i class="fa fa-check"></i><b>3</b> Rmd</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="rmd.html"><a href="rmd.html#r"><i class="fa fa-check"></i><b>3.1</b> R</a></li>
+<li class="chapter" data-level="3.2" data-path="rmd.html"><a href="rmd.html#markdown"><i class="fa fa-check"></i><b>3.2</b> Markdown</a></li>
+<li class="chapter" data-level="3.3" data-path="rmd.html"><a href="rmd.html#r-markdown"><i class="fa fa-check"></i><b>3.3</b> R + markdown</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html"><i class="fa fa-check"></i><b>4</b> Basic webpage ingredients</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#site-yaml"><i class="fa fa-check"></i><b>4.1</b> Site YAML</a></li>
+<li class="chapter" data-level="4.2" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#index"><i class="fa fa-check"></i><b>4.2</b> Index</a></li>
+<li class="chapter" data-level="4.3" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#pages"><i class="fa fa-check"></i><b>4.3</b> Pages</a></li>
+<li class="chapter" data-level="4.4" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#styling"><i class="fa fa-check"></i><b>4.4</b> Styling</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#html"><i class="fa fa-check"></i><b>4.4.1</b> HTML</a></li>
+<li class="chapter" data-level="4.4.2" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#css"><i class="fa fa-check"></i><b>4.4.2</b> CSS</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#rendering"><i class="fa fa-check"></i><b>4.5</b> Rendering</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="blogdown-bookdown.html"><a href="blogdown-bookdown.html"><i class="fa fa-check"></i><b>5</b> Blogdown &amp; bookdown</a></li>
+<li class="divider"></li>
+</a>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Making websites with Rmd &amp; GitHub</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="basic-webpage-ingredients" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">4</span> Basic webpage ingredients<a href="basic-webpage-ingredients.html#basic-webpage-ingredients" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="site-yaml" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Site YAML<a href="basic-webpage-ingredients.html#site-yaml" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="index" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Index<a href="basic-webpage-ingredients.html#index" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="pages" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Pages<a href="basic-webpage-ingredients.html#pages" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+</div>
+<div id="styling" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> Styling<a href="basic-webpage-ingredients.html#styling" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="html" class="section level3 hasAnchor" number="4.4.1">
+<h3><span class="header-section-number">4.4.1</span> HTML<a href="basic-webpage-ingredients.html#html" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+<div id="css" class="section level3 hasAnchor" number="4.4.2">
+<h3><span class="header-section-number">4.4.2</span> CSS<a href="basic-webpage-ingredients.html#css" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+</div>
+</div>
+<div id="rendering" class="section level2 hasAnchor" number="4.5">
+<h2><span class="header-section-number">4.5</span> Rendering<a href="basic-webpage-ingredients.html#rendering" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="rmd.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="blogdown-bookdown.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": false,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/liza-wood/make_github_webpage/edit/master/04_basic_ingredients.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/liza-wood/make_github_webpage/blob/master/04_basic_ingredients.Rmd",
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+},
+"code_folding": "show"
+});
+});
+</script>
+
+</body>
+
+</html>
