@@ -31,17 +31,17 @@ output:
 
 # Overview {-}
 
-9-9:30 Check in on set-up  
+9-9:30 Check in on set-up (please try to [complete all set-up](https://liza-wood.github.io/make_github_webpage/set-up.html) ahead of time!)
 
-9:30-10:30 GitHub  
+9:30-10:30 GitHub -- setting up a project and code workflow
 
 10:30-10:45 Break 
 
-10:45-11:30 Pages with Rmd
+10:45-11:30 Rmd -- constructing pages for website
 
-11:30-12:30 Website ingredients
+11:30-12:30 Website ingredients -- turning Rmd into a renderable sit
 
 12:30-1:00 Lunch break
 
-1:00-2:00 Rendering 
+1:00-2:00 Rendering -- publish the site and refine  
 
