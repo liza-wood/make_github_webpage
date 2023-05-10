@@ -27,7 +27,7 @@ repo:
 7. `git add` all changed files, then `git commit` and `git push`.
 
 
-# YOUR WORKSHOP TITLE
+# YOUR WORKSHOP TITLE  
 
 _DATE  
 _Instructor: YOUR NAME <<YOUR_EMAIL@ucdavis.edu>>_  
