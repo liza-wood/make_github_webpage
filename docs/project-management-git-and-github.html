@@ -23,7 +23,7 @@
 <meta name="author" content="Liza Wood" />
 
 
-<meta name="date" content="2023-05-09" />
+<meta name="date" content="2023-06-08" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -218,7 +218,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="where-am-i-getting-to-know-your-file-paths" class="section level3 hasAnchor" number="2.1.1">
 <h3><span class="header-section-number">2.1.1</span> Where am I? Getting to know your file paths<a href="project-management-git-and-github.html#where-am-i-getting-to-know-your-file-paths" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>One of the first things useful to know when you open up RStudio is: <strong>where am I in my computer?</strong> You get answer this by running the <code>getwd()</code> function to find your <em>working directory</em>, like this:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="project-management-git-and-github.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="project-management-git-and-github.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code></pre></div>
 <p>A working directory is where your RStudio session is operating from (i.e. its home base) at that moment. The answer to <code>getwd()</code> will be unique to your computer, and might vary quite greatly for folks who are not in an R Project (more on that soon). If you are not in an R Project, you can set your default working directory under <strong>Tools &gt; Global Options</strong>. This is then the very first default that you can set.</p>
 <p><img src="imgs/default_dir.png" width="70%" style="display: block; margin: auto;" /></p>
 <p>Before we get into projects, we want to make sure we understand how to navigate around our computer using <strong>file paths</strong>. File paths are the sequence of folders (also called directories) that tell your computer where to find a certain file. So when you open a finder and click through different folder images or names to find and end destination, you are navigating along a particular file path. When we code, instead of clicking we want to guide R into the right directory using the path name.</p>

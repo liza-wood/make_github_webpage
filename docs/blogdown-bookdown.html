@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>5 Blogdown &amp; bookdown | Making websites with Rmd &amp; GitHub</title>
   <meta name="description" content="5 Blogdown &amp; bookdown | Making websites with Rmd &amp; GitHub" />
-  <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
 
   <meta property="og:title" content="5 Blogdown &amp; bookdown | Making websites with Rmd &amp; GitHub" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 <meta name="author" content="Liza Wood" />
 
 
-<meta name="date" content="2023-05-09" />
+<meta name="date" content="2023-06-08" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -54,7 +54,75 @@
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
 
 <link rel="stylesheet" href="styling.css" type="text/css" />
 </head>
@@ -84,23 +152,23 @@
 <li class="chapter" data-level="1.3" data-path="set-up.html"><a href="set-up.html#github"><i class="fa fa-check"></i><b>1.3</b> GitHub</a></li>
 <li class="chapter" data-level="1.4" data-path="set-up.html"><a href="set-up.html#ssh"><i class="fa fa-check"></i><b>1.4</b> SSH</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="github-1.html"><a href="github-1.html"><i class="fa fa-check"></i><b>2</b> GitHub</a>
+<li class="chapter" data-level="2" data-path="project-management-git-and-github.html"><a href="project-management-git-and-github.html"><i class="fa fa-check"></i><b>2</b> Project Management, git, and GitHub</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="github-1.html"><a href="github-1.html#desktop-r-projects"><i class="fa fa-check"></i><b>2.1</b> Desktop: R Projects</a>
+<li class="chapter" data-level="2.1" data-path="project-management-git-and-github.html"><a href="project-management-git-and-github.html#organizing-rstudio-with-projects"><i class="fa fa-check"></i><b>2.1</b> Organizing RStudio with projects</a>
 <ul>
-<li class="chapter" data-level="2.1.1" data-path="github-1.html"><a href="github-1.html#getting-to-know-your-directories"><i class="fa fa-check"></i><b>2.1.1</b> Getting to know your directories</a></li>
-<li class="chapter" data-level="2.1.2" data-path="github-1.html"><a href="github-1.html#r-projects"><i class="fa fa-check"></i><b>2.1.2</b> R projects</a></li>
+<li class="chapter" data-level="2.1.1" data-path="project-management-git-and-github.html"><a href="project-management-git-and-github.html#where-am-i-getting-to-know-your-file-paths"><i class="fa fa-check"></i><b>2.1.1</b> Where am I? Getting to know your file paths</a></li>
+<li class="chapter" data-level="2.1.2" data-path="project-management-git-and-github.html"><a href="project-management-git-and-github.html#file-paths-feel-complicated-enter-r-projects"><i class="fa fa-check"></i><b>2.1.2</b> “File paths feel complicated” [Enter R projects]</a></li>
 </ul></li>
-<li class="chapter" data-level="2.2" data-path="github-1.html"><a href="github-1.html#internet-github-repositories"><i class="fa fa-check"></i><b>2.2</b> Internet: GitHub Repositories</a>
+<li class="chapter" data-level="2.2" data-path="project-management-git-and-github.html"><a href="project-management-git-and-github.html#git-as-local-version-control"><i class="fa fa-check"></i><b>2.2</b> git as local version control</a>
 <ul>
-<li class="chapter" data-level="2.2.1" data-path="github-1.html"><a href="github-1.html#repos-as-directories"><i class="fa fa-check"></i><b>2.2.1</b> ‘Repos’ as directories</a></li>
+<li class="chapter" data-level="2.2.1" data-path="project-management-git-and-github.html"><a href="project-management-git-and-github.html#check-in"><i class="fa fa-check"></i><b>2.2.1</b> Check in</a></li>
 </ul></li>
-<li class="chapter" data-level="2.3" data-path="github-1.html"><a href="github-1.html#linking-desktop-to-internet"><i class="fa fa-check"></i><b>2.3</b> Linking desktop to internet</a>
+<li class="chapter" data-level="2.3" data-path="project-management-git-and-github.html"><a href="project-management-git-and-github.html#connecting-remotely-to-github"><i class="fa fa-check"></i><b>2.3</b> Connecting remotely to GitHub</a>
 <ul>
-<li class="chapter" data-level="2.3.1" data-path="github-1.html"><a href="github-1.html#cloning"><i class="fa fa-check"></i><b>2.3.1</b> Cloning</a></li>
-<li class="chapter" data-level="2.3.2" data-path="github-1.html"><a href="github-1.html#add-commit-push"><i class="fa fa-check"></i><b>2.3.2</b> Add-commit-push</a></li>
-<li class="chapter" data-level="2.3.3" data-path="github-1.html"><a href="github-1.html#superpowers"><i class="fa fa-check"></i><b>2.3.3</b> Superpowers</a></li>
+<li class="chapter" data-level="2.3.1" data-path="project-management-git-and-github.html"><a href="project-management-git-and-github.html#create-a-remote-repository"><i class="fa fa-check"></i><b>2.3.1</b> Create a remote repository</a></li>
+<li class="chapter" data-level="2.3.2" data-path="project-management-git-and-github.html"><a href="project-management-git-and-github.html#do-it-all-in-reverse"><i class="fa fa-check"></i><b>2.3.2</b> Do it all in reverse</a></li>
 </ul></li>
+<li class="chapter" data-level="2.4" data-path="project-management-git-and-github.html"><a href="project-management-git-and-github.html#why-did-i-do-this"><i class="fa fa-check"></i><b>2.4</b> Why did I do this?</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="rmd.html"><a href="rmd.html"><i class="fa fa-check"></i><b>3</b> Rmd</a>
 <ul>
