@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2 Project Management, git, and GitHub | Making websites with Rmd &amp; GitHub</title>
+  <meta name="description" content="2 Project Management, git, and GitHub | Making websites with Rmd &amp; GitHub" />
+  <meta name="generator" content="bookdown 0.34 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2 Project Management, git, and GitHub | Making websites with Rmd &amp; GitHub" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta name="github-repo" content="liza-wood/make_github_webpage" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2 Project Management, git, and GitHub | Making websites with Rmd &amp; GitHub" />
+  
+  
+  
+
+<meta name="author" content="Liza Wood" />
+
+
+<meta name="date" content="2023-05-09" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="set-up.html"/>
+<link rel="next" href="rmd.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="styling.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="https://allisonhorst.com/">
+  <img src="imgs/rmd_hp.png" style="height: 100%; width: 100%; object-fit: contain" />
+  <figcaption style="font-size: 8px">Artwork by @allison_horst</figcaption>
+</a></li>
+<li><a href="./" style="font-size: 16px">Making websites with Rmd & GitHub</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Overview</a></li>
+<li class="chapter" data-level="1" data-path="set-up.html"><a href="set-up.html"><i class="fa fa-check"></i><b>1</b> Set-up</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="set-up.html"><a href="set-up.html#r-rstudio"><i class="fa fa-check"></i><b>1.1</b> R + RStudio</a></li>
+<li class="chapter" data-level="1.2" data-path="set-up.html"><a href="set-up.html#git"><i class="fa fa-check"></i><b>1.2</b> git</a></li>
+<li class="chapter" data-level="1.3" data-path="set-up.html"><a href="set-up.html#github"><i class="fa fa-check"></i><b>1.3</b> GitHub</a></li>
+<li class="chapter" data-level="1.4" data-path="set-up.html"><a href="set-up.html#ssh"><i class="fa fa-check"></i><b>1.4</b> SSH</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="project-management-git-and-github.html"><a href="project-management-git-and-github.html"><i class="fa fa-check"></i><b>2</b> Project Management, git, and GitHub</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="project-management-git-and-github.html"><a href="project-management-git-and-github.html#organizing-rstudio-with-projects"><i class="fa fa-check"></i><b>2.1</b> Organizing RStudio with projects</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="project-management-git-and-github.html"><a href="project-management-git-and-github.html#where-am-i-getting-to-know-your-file-paths"><i class="fa fa-check"></i><b>2.1.1</b> Where am I? Getting to know your file paths</a></li>
+<li class="chapter" data-level="2.1.2" data-path="project-management-git-and-github.html"><a href="project-management-git-and-github.html#file-paths-feel-complicated-enter-r-projects"><i class="fa fa-check"></i><b>2.1.2</b> “File paths feel complicated” [Enter R projects]</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="project-management-git-and-github.html"><a href="project-management-git-and-github.html#git-as-local-version-control"><i class="fa fa-check"></i><b>2.2</b> git as local version control</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="project-management-git-and-github.html"><a href="project-management-git-and-github.html#check-in"><i class="fa fa-check"></i><b>2.2.1</b> Check in</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="project-management-git-and-github.html"><a href="project-management-git-and-github.html#connecting-remotely-to-github"><i class="fa fa-check"></i><b>2.3</b> Connecting remotely to GitHub</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="project-management-git-and-github.html"><a href="project-management-git-and-github.html#create-a-remote-repository"><i class="fa fa-check"></i><b>2.3.1</b> Create a remote repository</a></li>
+<li class="chapter" data-level="2.3.2" data-path="project-management-git-and-github.html"><a href="project-management-git-and-github.html#do-it-all-in-reverse"><i class="fa fa-check"></i><b>2.3.2</b> Do it all in reverse</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="project-management-git-and-github.html"><a href="project-management-git-and-github.html#why-did-i-do-this"><i class="fa fa-check"></i><b>2.4</b> Why did I do this?</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="rmd.html"><a href="rmd.html"><i class="fa fa-check"></i><b>3</b> Rmd</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="rmd.html"><a href="rmd.html#r"><i class="fa fa-check"></i><b>3.1</b> R</a></li>
+<li class="chapter" data-level="3.2" data-path="rmd.html"><a href="rmd.html#markdown"><i class="fa fa-check"></i><b>3.2</b> Markdown</a></li>
+<li class="chapter" data-level="3.3" data-path="rmd.html"><a href="rmd.html#r-markdown"><i class="fa fa-check"></i><b>3.3</b> R + markdown</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html"><i class="fa fa-check"></i><b>4</b> Basic webpage ingredients</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#site-yaml"><i class="fa fa-check"></i><b>4.1</b> Site YAML</a></li>
+<li class="chapter" data-level="4.2" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#index"><i class="fa fa-check"></i><b>4.2</b> Index</a></li>
+<li class="chapter" data-level="4.3" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#pages"><i class="fa fa-check"></i><b>4.3</b> Pages</a></li>
+<li class="chapter" data-level="4.4" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#styling"><i class="fa fa-check"></i><b>4.4</b> Styling</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#html"><i class="fa fa-check"></i><b>4.4.1</b> HTML</a></li>
+<li class="chapter" data-level="4.4.2" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#css"><i class="fa fa-check"></i><b>4.4.2</b> CSS</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#rendering"><i class="fa fa-check"></i><b>4.5</b> Rendering</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="blogdown-bookdown.html"><a href="blogdown-bookdown.html"><i class="fa fa-check"></i><b>5</b> Blogdown &amp; bookdown</a></li>
+<li class="divider"></li>
+</a>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Making websites with Rmd &amp; GitHub</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="project-management-git-and-github" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">2</span> Project Management, git, and GitHub<a href="project-management-git-and-github.html#project-management-git-and-github" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This section is going to introduce us to to major pieces of the puzzle for building a webpage. These skills are also incredibly relevant to working in R more generally, so if you can understand these components and how they relate, you’re well on your way to have streamlined management practices in R. We are going to talk about 1) R Projects, 2) git, and 3) GitHub.</p>
+<div id="organizing-rstudio-with-projects" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Organizing RStudio with projects<a href="project-management-git-and-github.html#organizing-rstudio-with-projects" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Here we are just going to get set up with an R Project that will be a strong base for <em>any</em> kind of research project, website building included. This set up will be exclusive to your desktop – no need to involve GitHub here if you don’t want.</p>
+<div id="where-am-i-getting-to-know-your-file-paths" class="section level3 hasAnchor" number="2.1.1">
+<h3><span class="header-section-number">2.1.1</span> Where am I? Getting to know your file paths<a href="project-management-git-and-github.html#where-am-i-getting-to-know-your-file-paths" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>One of the first things useful to know when you open up RStudio is: <strong>where am I in my computer?</strong> You get answer this by running the <code>getwd()</code> function to find your <em>working directory</em>, like this:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="project-management-git-and-github.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code></pre></div>
+<p>A working directory is where your RStudio session is operating from (i.e. its home base) at that moment. The answer to <code>getwd()</code> will be unique to your computer, and might vary quite greatly for folks who are not in an R Project (more on that soon). If you are not in an R Project, you can set your default working directory under <strong>Tools &gt; Global Options</strong>. This is then the very first default that you can set.</p>
+<p><img src="imgs/default_dir.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>Before we get into projects, we want to make sure we understand how to navigate around our computer using <strong>file paths</strong>. File paths are the sequence of folders (also called directories) that tell your computer where to find a certain file. So when you open a finder and click through different folder images or names to find and end destination, you are navigating along a particular file path. When we code, instead of clicking we want to guide R into the right directory using the path name.</p>
+<p>There are 2 basic kinds of file paths:</p>
+<ul>
+<li>Absolute: Absolute paths list out the full file path, usually starting with your username, which you can also refer to using the shortcut ~. So instead of <code>C:/MyName/Documents</code> or <code>/Users/MyName/Documents</code>, you can type <code>~/Documents</code>. But generally, the only place an absolute path will work is your computer. It will break on anyone else computer, or anytime you move or rename something.<br />
+</li>
+<li>Relative: Relative paths are relative to your <em>working directory</em>. So if R thinks we’re in that <code>~/MyName/Documents/Projects/2023</code> folder, and we want to access a file in a folder inside it called <code>data</code>, we can type <code>data/my_file</code> instead of <code>~MyName/Documents/Projects/2023/data</code>.</li>
+</ul>
+<p><strong>Check in</strong></p>
+<p>It can be fun to experiment a little with file paths to understand where you are. First, any time you open up quotation marks, R might think you are prompting it with a file path. So if you open up quotation marks and put your cursor inside, it will prompt you with the next files in line, relative to your working directory.</p>
+<p><img src="imgs/filepath_prompt.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>Fun note is that you can continue to move deeper and deeper into a file path with the help of tab completion. And you can also move <em>back out</em> of a file path with two periods <code>../</code>. This signals to your computer that you want to back up instead of move forward along your file path, then you can choose to take another road</p>
+<p><img src="imgs/filepath_backup.png" width="70%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="file-paths-feel-complicated-enter-r-projects" class="section level3 hasAnchor" number="2.1.2">
+<h3><span class="header-section-number">2.1.2</span> “File paths feel complicated” [Enter R projects]<a href="project-management-git-and-github.html#file-paths-feel-complicated-enter-r-projects" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>One of the great advantages of using tools like RStudio is they make it easy to use an organized ‘project’ workflow. What do we mean by ‘using projects’? Projects refer to a general pattern or structure used for each work project or analysis. This approach is not specific to R. Any practiced data scientist will use a folder structure and organization scheme, no matter what programming language they use. We’ll get to that in a minute.</p>
+<p>What is special in RStudio is that projects also positions your working directory in a folder, which you can then use as your home base to organize the project folders around. Let’s make a project and organize folders around it.</p>
+<p>To start a new project, we want to follow the <strong>File &gt; New Project</strong> option in RStudio. We’re going to start by selecting the <strong>New Directory</strong> option.</p>
+<p><img src="imgs/newproj_select1.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>Next, we’re going to select the <strong>New Project</strong> option. Take a look around before you do to notice how many different options there are! All sorts of templates! These can be great places to start for all sorts of activities – building a web page, a Shiny App, etc. But for now we are going to start without any bells and whistles.</p>
+<p><img src="imgs/newproj_select2.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>Once in that new project, we need to give the directory (folder) a name. For the sake of this workshop, we are going to give our project directory the same name as what will eventually be our web page repository. In most cases what you name the directory doesn’t matter, but here we will try to be exact. Name the repository your-github-username.github.io. So for example, my github user name is liza-instructor, so my directory will be called liza-instructor.github.io.</p>
+<p><img src="imgs/newproj_dir.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>Now, in the R Project, we can again ask R to report our working directory with <code>getwd()</code>. This time, your answer should be different. If set up correctly, your working directory should not be the folder created by the project. What this means is that everything you do inside this project (i.e. you open this project when you open your R session) will be <em>relative</em> to your project working directory. This is powerful because now all of the file paths you use will be relative.</p>
+<p>When setting up a project, the general idea is to always use the same structure and naming schemes across every project. For a research project, you should typically have a couple files and folders, including README.md, script, figures, and maybe data, depending on your data storage needs. For a web page, we’re going to do something a little different.</p>
+<p>For now, we should all create/save a script called ‘workshop_notes.R’. This can be saved in our website repository, even though it won’t be part of our webpage, eventually. But it can be a useful place for us to store notes and experiment.</p>
+</div>
+</div>
+<div id="git-as-local-version-control" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> git as local version control<a href="project-management-git-and-github.html#git-as-local-version-control" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Next, we’re going to review how git works. It is important to recognize that git is a software on its own that doesn’t need GitHub to operate as version control. You can use git on different projects without ever connecting to GitHub, just to monitor your work ‘locally’ (on your computer).</p>
+<p>Now, if you looked closely when you were setting up your project, there was an option to check the box saying: Create a git repository. That would accomplish what we’re about to do. But instead of just checking the box, we are going to dig in deep by using <strong>git in the Terminal</strong> in order to really understand what git is and how to use it.</p>
+<p>So, <strong>tab over to the Terminal in RStudio</strong>, which should be next to your Console tab</p>
+<p><img src="imgs/terminal.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>You want to make sure to see two things. First, is there a dollar sign ($) starting your prompt? Second, is the project name somewhere in your prompt? For example, my prompt reads: <code>(base) lwmbp:liza-instructor.github.io lizawood\$</code>. This is the name of my computer (lwmbp), the name of my project (liza-instructor.github.io) and my username (lizawood). If that isn’t happening for you, check your your <strong>Tools &gt; Global options &gt; Terminal</strong> and take a look at the first two settings. Your ‘Initial directory’ should be set to ‘Project directory’ and ‘New terminal open with’ should be ‘Bash’ for Macs or ‘Git Bash’ for Windows.</p>
+<p><img src="imgs/global_terminal.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>If you’re all set in Terminal, not we want to initiate git! What this means is that we want the git software to begin tracking the changes made within this project folder (and the subfolders we will eventually store in the project folder). We initialize git by typing the following command, <code>git init</code> in Terminal and pressing Enter.</p>
+<pre><code>git init</code></pre>
+<p>You should get a message with several details, as along these lines:</p>
+<pre><code>hint: Using &#39;master&#39; as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint:   git config --global init.defaultBranch &lt;name&gt;
+hint: 
+hint: Names commonly chosen instead of &#39;master&#39; are &#39;main&#39;, &#39;trunk&#39; and
+hint: &#39;development&#39;. The just-created branch can be renamed via this command:
+hint: 
+hint:   git branch -m &lt;name&gt;
+Initialized empty Git repository in
+/Users/lizawood/Documents/R-Projects/liza-instructor.github.io/.git/</code></pre>
+<p>We will focus right now on the bottom-most line: You’ve initialized a repository!</p>
+<p>So, now let’s talk about what git does. Let’s save our workshop_notes.R script then ask git what it is up to with the following commands in Terminal:</p>
+<pre><code>git status</code></pre>
+<p>What do we get?</p>
+<pre><code>(base) lwmbp:liza-instructor.github.io lizawood$ git status
+On branch main
+Your branch is up to date with &#39;origin/main&#39;.
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+        .Rproj.user/84604AD9/sources/session-b7b5e526/C5AB7D86
+        .Rproj.user/84604AD9/sources/session-b7b5e526/C5AB7D86-contents
+        workshop_notes.R
+
+no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)</code></pre>
+<p>This report is telling us that we have untracked files. Meaning – git has not yet ‘tracked’ or recorded the files we have in our Project. Namely, the workshop_notes.R looks familiar. But what is that other stuff? We really don’t want to concern ourselves with this much, because this is just session information about our users. But instead of just mentally ignoring it, we can actually tell git to ignore it using a .gitignore file.</p>
+<p>Open a plain text file, and then inside that text file you can name the types of things you want git to ignore. In our case, this is ‘.Rproj.user’. Note that you can use this ignore file for all sorts of things. If you have some secret code you’re not ready to share, or a big data folder that won’t fit on git. This is one way to keep parts of your project ‘hidden’ from git. But for now we are just going to use it to keep out unwanted clutter that goes on in R’s background. If you get a warning about saving, go ahead and do it anyways.</p>
+<p><img src="imgs/text_file.png" width="49%" /><img src="imgs/save_gitignore.png" width="49%" /></p>
+<p>Now, we can ask Terminal for the git status again, we see what’s changed:</p>
+<pre><code>(base) lwmbp:liza-instructor.github.io lizawood$ git status
+On branch main
+Your branch is up to date with &#39;origin/main&#39;.
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+        .gitignore
+        workshop_notes.R
+
+no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)</code></pre>
+<p>Now it is tracking our gitignore file but nor our Project user info.</p>
+<p>So, now we can get into action. We want to use git to track our edits on RStudio. To get git to do that, we need to do two steps: 1) “Stage” files for tracking by “adding” them, and 2) “Committing” files to git’s version control memory. We are going to do this with two main git commits.</p>
+<p>First, we want to ‘stage’ for commit with the <code>git add</code> command in Terminal. But we need to specify what to add. You can add file by file by including their name. For instance, we can try:</p>
+<pre><code>git add workshop_notes.R</code></pre>
+<p>Then when we check our git status, we see something new. Now workshop_notes.R has moved to a new category: Changes to be committed, while .gitignore is still in the Untracked files.</p>
+<pre><code>(base) lwmbp:liza-instructor.github.io lizawood$ git status
+On branch main
+Your branch is up to date with &#39;origin/main&#39;.
+
+Changes to be committed:
+  (use &quot;git restore --staged &lt;file&gt;...&quot; to unstage)
+        new file:   workshop_notes.R
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+        .gitignore</code></pre>
+<p>More often than not, I want to add all of my untracked files at once. So instead of listing them out one by one, we can use file path speak for “take them all”, which is the period (.).</p>
+<pre><code>git add .</code></pre>
+<p>Now we have added all untracked files. You can check git status again to verify.</p>
+<p>Next, we want to complete step two: commit the tracked changes. We will do this with the <code>git commit</code> command in Terminal. But we also need to include a message when we commit, which will be associated with the commit. To do this we need to append the <code>-m</code> flag to the command, and write the message in quotations. Like this:</p>
+<pre><code>git commit -m &#39;first commit&#39;</code></pre>
+<p>When you commit, all sorts of data will be attached. The files, the time, the edits. So messages are (ideally) sharing information about the changes or activity that is not already reflected by the files the message is associated with or the time of the commit.</p>
+<p>What this commit does is essentially puts a pin in your work. It saves a version of that work to the git version control software – you’ll see when you commit that you’ll get a short summary and an ‘id’ number associated with that commit. This version of your work is not stored in git. Woo hoo!</p>
+<div id="check-in" class="section level3 hasAnchor" number="2.2.1">
+<h3><span class="header-section-number">2.2.1</span> Check in<a href="project-management-git-and-github.html#check-in" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>We did this in a drawn out way, but the key take-aways are that you should be adding and committing on a regular basis. I generally like to add and commit work at the end of the day, but if I am working on a project where I am adding and deleting and trialing several ideas, I will add and commit before I delete or trial something major. All the git status and .gitignore things aside, you’ll mainly want to remember the two steps: <code>git add .</code> and <code>git commit -m 'write a message'</code>. Make a change to your ‘workshop_notes.R’ file, save it, and go through these two steps:</p>
+<pre><code>git add .
+git commit -m &#39;updating notes&#39;</code></pre>
+<p>Now we can use another command in the Terminal, <code>git log --oneline</code> to see a one line report out of the activity that has taken place.</p>
+</div>
+</div>
+<div id="connecting-remotely-to-github" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Connecting remotely to GitHub<a href="project-management-git-and-github.html#connecting-remotely-to-github" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Now, we have a project set up so we have a good home base for our working directory. We’re set up with git so that it is tracking our every move. Now, we want to connect this workflow to the internet. If you were working on a research project, this connection would be to serve as a cloud backup, potentially a public-facing demonstration of your work, and open up possibilities for code collaboration. With the project we’re going to make today, connecting to GitHub will allow us to not only have public-facing work, but have the work be hosted on a site that we create.</p>
+<p>It is worth taking a moment to take stock of a nice good image that helps us understand git, and its relationship to GitHub. So far we have done the lower, ‘local’ part of this image. We’ve set up a local working directory via our R Project, then connected that to a local ‘repository’, which is how git houses the versions we make, which are intimately linked to your project. We have staged and committed changed to the local repository. And now we want to push and pull up to a a remote (internet) repository.</p>
+<p><img src="imgs/git_workflow.png" width="70%" style="display: block; margin: auto;" /></p>
+<div id="create-a-remote-repository" class="section level3 hasAnchor" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> Create a remote repository<a href="project-management-git-and-github.html#create-a-remote-repository" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>To create a remote repository on GitHub, we will need to navigate to our GitHub profiles, and make it to your repositories tab.</p>
+<p><img src="imgs/find_repo.png" width="40%" style="display: block; margin: auto;" /></p>
+<p>Once on that page, select the green button on the right of the screen that signals you want to make a new repository.</p>
+<p><img src="imgs/new_repo.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>Now, you get to name your repository! If you were doing a research project, this could describe that project. Typically, I make repositories and R Projects with the same name, and only have one project per repository. For the website, the name of the repository is really important because it influences how GitHub will <em>host</em> the site. So follow the exact format for your repository name: <github-username>.github.io. So for instance, mine is ‘liza-instructor.github.gio’. It looks redundant, but please do it.</p>
+<p><img src="imgs/name_repo.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>For now we will leave all the other settings blank, since we are going to connect to our existing repository that we have already initiated locally. Click ‘Create repository’ at the bottom, and you should be taken to a set-up page. GitHub provides several instruction for set-up. We are going to follow the option ‘…or push an existing reppository from the command line’ because we have already created our local repository. We don’t need to initiate a new one.
+We are going to follow those instructions in the command line (Terminal).</p>
+<p><img src="imgs/github_instructions.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>These instructions walk you through three steps, two of which you won’t need to do again.<br />
+1. In the first line <code>git remote add origin</code> you are creating a tether between your local repository (‘repo’) and the remote repo on GitHub. Once you’ve add the remote origin link to your local repo, you don’t need to do it again.</p>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Second, <code>git branch -M main</code>, we are specifying the name of our main branch. We won’t get into branching for this workshop, but know that one of the several functionalities of git and collaborating on GitHub are branches. If you think of a project as a tree, you can create a branch to work on something ‘on the side’ to experiment. Once it is done, you can merge that branch into the main branch… this is largely for collaborative purposes. So for now, you’ve establshied that your git branch main <code>git branch -M</code> is called ‘main’.</p></li>
+<li><p>Last, you have told git to ‘push’ your commited changes up to GitHub. This is the command that links your local repository to the remote repository. It know where to go because of step 1 – you’ve given it the URL to your project on the internet, essentially. You’ve also been very specific about whether what branch you are pushing to ‘upstream’ <code>-u origin main</code>. From now on, if you aren’t working with branches, you only need to <code>git push</code> – no need to specify the origina of the branch.</p></li>
+</ol>
+<p>There’s a lot going on here, but you can reference a little git cheat sheet by just typing the command <code>git</code> into the Terminal. You will be provided with several git commands and ‘flags’ (what those dash and letters mean).</p>
+<div id="check-in-1" class="section level4 hasAnchor" number="2.3.1.1">
+<h4><span class="header-section-number">2.3.1.1</span> Check in<a href="project-management-git-and-github.html#check-in-1" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>So what have we done?</p>
+<ol style="list-style-type: decimal">
+<li><p>Started a project in RStudio.</p></li>
+<li><p>Initialized a local git repository with in that project folder using the <code>git init</code> command in Terminal.</p></li>
+<li><p>Created a remote GitHub repository and then linked the local and remote repositories in Terminal.</p></li>
+</ol>
+<p>Now within our project, we can save and updates files, and as we do, follow the three key steps to keep our local and remote repositories tracking our work and in sync with one another:</p>
+<pre><code>git add .
+git commit -m &#39;message&#39;
+git push</code></pre>
+<p>I’m generally finishing my day with these steps to keep a log of my work.</p>
+</div>
+</div>
+<div id="do-it-all-in-reverse" class="section level3 hasAnchor" number="2.3.2">
+<h3><span class="header-section-number">2.3.2</span> Do it all in reverse<a href="project-management-git-and-github.html#do-it-all-in-reverse" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Once you understand each of the steps we walked through in the previous sections, it is important to understand that you can mix up that order of operations. In fact, it is quite common for folks to do it all in reverse:</p>
+<ol style="list-style-type: decimal">
+<li><p>Create a remote repository in GitHub.</p></li>
+<li><p>‘Clone’ that to a local repository while simultaneously generating an R Project in RStudio.</p></li>
+</ol>
+<p>What does that look like? We can provide a little glimpse with a practice repository. First, you’ll want to start a new repo in GitHub. When you do this, you can now create certain settings, like adding a README and adding a .gitignore file that is templated for RStudio, so that those items exist right from the start.</p>
+<p><img src="imgs/make_repo_first.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>Once we’ve created that repository, you’ll want to follow the green ‘Code’ button to the right of the options on the repo. When you open that, you should copy the SSH URL to use when you create a new project</p>
+<p><img src="imgs/copy_ssh.png" width="70%" style="display: block; margin: auto;" /></p>
+<p>Then in RStudio, we can <strong>File &gt; New Project</strong> but this time we will follow the <strong>Version Control</strong> path and select the <strong>Git</strong> option. You’ll then be prompted to paste in a Repository URL. This is where you paste in the SSH URL copied from GitHub. In some cases, the directory name automatically fills in with the repo name from GitHub. In other settings, you may need to type it. This will be the name of your projects’ directory. Last, you just have to click Create Project, and your repository from GitHub will be ‘cloned’ as a local repository, and the tether will be established so you can add, commit, and push all you want!</p>
+<p><img src="imgs/git_select.png" width="49%" /><img src="imgs/paste_ssh.png" width="49%" /></p>
+</div>
+</div>
+<div id="why-did-i-do-this" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> Why did I do this?<a href="project-management-git-and-github.html#why-did-i-do-this" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Project management</strong></p>
+<p><strong>Version control</strong></p>
+<p><strong>Collaboration</strong></p>
+<p><strong>Hosting websites</strong></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="set-up.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="rmd.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": false,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/liza-wood/make_github_webpage/edit/master/02_github.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/liza-wood/make_github_webpage/blob/master/02_github.Rmd",
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+},
+"code_folding": "show"
+});
+});
+</script>
+
+</body>
+
+</html>

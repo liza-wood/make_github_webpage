@@ -26,3 +26,17 @@ html
 css
 rendering
 blogdown-bookdown
+project-management-git-and-github
+organizing-rstudio-with-projects
+where-am-i-getting-to-know-your-file-paths
+check-in
+file-paths-feel-complicated-enter-r-projects
+start-a-new-r-project
+git-as-local-version-control
+internet-github
+create-a-remote-repository
+check-in-1
+connecting-remotely-to-github
+do-it-all-in-reverse
+check-in-2
+why-did-i-do-this
