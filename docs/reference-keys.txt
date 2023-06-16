@@ -30,6 +30,6 @@ site-yaml
 set-up-github-pages-setting
 rendering
 themes-styles-bells-whistles
-html
-css
-blogdown-bookdown
+themes
+in-line-styling-with-html-or-css
+global-styling-with-css

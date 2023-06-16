@@ -31,7 +31,7 @@
   
   
 <link rel="prev" href="rmd.html"/>
-<link rel="next" href="blogdown-bookdown.html"/>
+
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -194,11 +194,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.4" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#rendering"><i class="fa fa-check"></i><b>4.4</b> 4. Rendering</a></li>
 <li class="chapter" data-level="4.5" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#themes-styles-bells-whistles"><i class="fa fa-check"></i><b>4.5</b> Themes, styles, bells, whistles</a>
 <ul>
-<li class="chapter" data-level="4.5.1" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#html"><i class="fa fa-check"></i><b>4.5.1</b> HTML</a></li>
-<li class="chapter" data-level="4.5.2" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#css"><i class="fa fa-check"></i><b>4.5.2</b> CSS</a></li>
+<li class="chapter" data-level="4.5.1" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#themes"><i class="fa fa-check"></i><b>4.5.1</b> Themes</a></li>
+<li class="chapter" data-level="4.5.2" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#in-line-styling-with-html-or-css"><i class="fa fa-check"></i><b>4.5.2</b> In-line styling with HTML or CSS</a></li>
+<li class="chapter" data-level="4.5.3" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#global-styling-with-css"><i class="fa fa-check"></i><b>4.5.3</b> Global styling with CSS</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="blogdown-bookdown.html"><a href="blogdown-bookdown.html"><i class="fa fa-check"></i><b>5</b> Blogdown &amp; bookdown</a></li>
 <li class="divider"></li>
 </a>
 
@@ -238,7 +238,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="site-yaml" class="section level2 hasAnchor" number="4.2">
 <h2><span class="header-section-number">4.2</span> 2. Site YAML<a href="basic-webpage-ingredients.html#site-yaml" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>We learned about YAMLs when we talked about Rmds: Every Rmd has a YAML that helps guide the knitting process, providing document metadata and knitting architecture. For our website, we are going to make a site YAML on our own, which will be a standalone file. This provides the <em>site</em> with metadata and knitting architecture.</p>
-<p>To create a site YAML, <strong>File &gt; New file &gt; Text File</strong>, which should open up a plain text file. Then we want to save this with the exact name: ’_site.yml’. The .yml extension makes this a YAML file for the site.</p>
+<p>To create a site YAML, <strong>File &gt; New file &gt; Text File</strong>, which should open up a plain text file. Then we want to save this with the exact name: ‘_site.yml’. The .yml extension makes this a YAML file for the site.</p>
 <p>Inside this site YAML we are going to add some information: 1) the name and navigation bar and 2) the output directory. First, the name is what appears on the ‘tab’ when you open the site, then the title and text on the navigation bar (navbar) are what will top your site. <strong>Note: Spaces matter here!</strong> Start by copying and pasting this text to make sure you’ve got it right, then edit from there. Note that we are adding the <em>.html</em> of our files as our href pointer. An href is how we identify the target to link to in website building. It is what will become a part of the URL, when all is said and done. So also bear in mind for what you name your files. Even if you hide that name using the ‘text’ part of the yaml, the HTML file name will still be in your URL!</p>
 <pre><code>name: &quot;Liza&#39;s website&quot;
 navbar:
@@ -269,11 +269,58 @@ git push</code></pre>
 </div>
 <div id="themes-styles-bells-whistles" class="section level2 hasAnchor" number="4.5">
 <h2><span class="header-section-number">4.5</span> Themes, styles, bells, whistles<a href="basic-webpage-ingredients.html#themes-styles-bells-whistles" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="html" class="section level3 hasAnchor" number="4.5.1">
-<h3><span class="header-section-number">4.5.1</span> HTML<a href="basic-webpage-ingredients.html#html" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>So far we’ve built a bare-bones website. With markdown tools alone, you can create a fairly complex architecture – different pages, tabs and links within those pages, embedding images, PDFs, videos. At this point, the quality of your webpage will be more about your content and creativity.</p>
+<p>But of course, we may want to add in some different fonts, colors, and styles. There are several approaches for this.</p>
+<div id="themes" class="section level3 hasAnchor" number="4.5.1">
+<h3><span class="header-section-number">4.5.1</span> Themes<a href="basic-webpage-ingredients.html#themes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>One of the easiest ways to modify the style of your page is to take one of the pre-built R Markdown themes. You can check out the <a href="https://www.datadreaming.org/post/r-markdown-theme-gallery/">R Markdown Theme Gallery</a> to get a sense of what these look like. Mostly they change the fonts and some coloration styles.</p>
+<p>You can try out different themes by adding a couple lines into your site YAML, below what you already have. For example, you can try out the ‘flatly’ theme by specifying that in the following text:</p>
+<pre><code>output:
+  html_document:
+    theme: flatly</code></pre>
+<p>Now, themes are a great starting point, but you may want to customize more. The next sections talk about custom styling.</p>
 </div>
-<div id="css" class="section level3 hasAnchor" number="4.5.2">
-<h3><span class="header-section-number">4.5.2</span> CSS<a href="basic-webpage-ingredients.html#css" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="in-line-styling-with-html-or-css" class="section level3 hasAnchor" number="4.5.2">
+<h3><span class="header-section-number">4.5.2</span> In-line styling with HTML or CSS<a href="basic-webpage-ingredients.html#in-line-styling-with-html-or-css" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>You may be happy with the theme, but may want to add some custom styling that can’t be achieved in markdown. This may be things like formatting certain features,</p>
+</div>
+<div id="global-styling-with-css" class="section level3 hasAnchor" number="4.5.3">
+<h3><span class="header-section-number">4.5.3</span> Global styling with CSS<a href="basic-webpage-ingredients.html#global-styling-with-css" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>In-line styling has its limits, and if you want to make the same styling changes to different pages, you’ll likely want to customize your styles with a ‘styles.css’ file. CSS (Cascading Style Sheets) is used to style and layout web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features. To set up this global styling, we need to do a couple things 1. create the file, 2., fill it with CSS style specifications, and 3. signal to our site YAML that we want to use it.</p>
+<p>First, let’s create the file. We can do this the same way we made the .yml, which is to open a plain text file (<strong>File &gt; New File &gt; Text File</strong>). This just generally makes sense for creating special file extensions that aren’t pre-specified in R Studio. Once you have that text file, save it as styles.css.</p>
+<p>Next, we need to fill in our file with CSS styles. Now, this is not an easy task. CSS builds on knowledge of HTML, which we are not writing ourselves for this workshop. I am going to point us to a few CSS tutorials that can help us wrap our head around this.<br />
+* <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS">Fairly deep explanation of CSS and its relationship to HTML</a><br />
+* <a href="https://www.w3schools.com/css/css_selectors.asp">Working tutorial for CSS</a></p>
+<p>But, the general intuition of CSS is that it calls on different <em>selectors</em> that match with the HTML formatting, then specifies the <em>properties</em> of how we would like to style that selector. For instance, the HTML of a page may look something like this:</p>
+<pre><code>&lt;h1&gt;Home&lt;\h1&gt;
+&lt;p&gt;This is my home page&lt;\p&gt;</code></pre>
+<p>The HTML here is signalling that there is a title (h1 or header 1) and text (p). These are the <em>element selectors</em> that we can cue in on. We can then specify different <em>properties</em> like color, hover, size, font-family, font-size, text-align, background-color,</p>
+<pre><code>h1 {
+  text-align: center
+}
+p {
+  color: purple
+}</code></pre>
+<p>We can also call on <em>class selectors</em> rather than specific element selectors. So while ‘p’ is an element in our HTML, something like .navbar is a class. Classes tend to start with a period, and are based on some shared formatting feature. For example .navbar represents the navigation bar element, and .highlight represents any text that has been highlighted. We could add paddings around the navigation bar as follows:</p>
+<pre><code>.navbar {
+  padding-bottom: 1em;
+  padding-top: 1em;
+  background-color: white
+}
+</code></pre>
+<p>There is a lot to toggle around here, and I am not a CSS expert. I generally like leaving the default in R then just adding in-line, but there is a whole world to explore here.</p>
+<p>Last, we have to signal to our site that it should use the style.css file to style our site. We can do this by adding yet another line to your _site.yml. As part of output, we want to add on..</p>
+<pre><code>output:
+  html_document:
+    theme: flatly
+    css: styles.css</code></pre>
+<p>Now let’s run through the last steps to see our rendered site again.</p>
+<p>In the Console:</p>
+<pre><code>rmarkdown::render_site()</code></pre>
+<p>In the Terminal:</p>
+<pre><code>git add .
+git commit -m &#39;adding CSS&#39;
+git push</code></pre>
 
 </div>
 </div>
@@ -283,8 +330,8 @@ git push</code></pre>
           </div>
         </div>
       </div>
-<a href="rmd.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="blogdown-bookdown.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="rmd.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
