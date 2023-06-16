@@ -125,10 +125,10 @@ This should set you up so that git is never tracking your data, and it won't be 
 
 2. Get yourself organized with Box Drive, Google Streaming, or whatever cloud service you work with. Most cloud services have ways of getting data from the cloud right into R. If you work with Box, I recommend downloading Box Drive, which then allows you to create a filepath straight to Box in R. Alternatively if you are a Drive person, your can use the `googlesheets4` package. 
 
-Once you have your data decision (built in R data like penguins, or your own data), try using it to write something up. Check out some of the options for formatting on pages like this:  
-* [Pimp my Rmd](https://holtzy.github.io/Pimp-my-rmd/)
-* [Rmd Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/)
-  * For example, [add tabs within a page](https://bookdown.org/yihui/rmarkdown-cookbook/html-tabs.html)  
+Once you have your data decision (built in R data like penguins, or your own data), try using it to write something up. Check out some of the options for formatting on pages like this:   
+* [Pimp my Rmd](https://holtzy.github.io/Pimp-my-rmd/)  
+* [Rmd Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/)  
+  * For example, [add tabs within a page](https://bookdown.org/yihui/rmarkdown-cookbook/html-tabs.html)   
 
 ### Knitting each file   
 

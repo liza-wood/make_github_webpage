@@ -25,11 +25,11 @@ make-a-research-page
 knitting-each-file
 check-in-2
 basic-webpage-ingredients
+create-index.rmd
 site-yaml
-index
-pages
-styling
+set-up-github-pages-setting
+rendering
+themes-styles-bells-whistles
 html
 css
-rendering
 blogdown-bookdown

@@ -188,15 +188,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="4" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html"><i class="fa fa-check"></i><b>4</b> Basic webpage ingredients</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#site-yaml"><i class="fa fa-check"></i><b>4.1</b> 1. Site YAML</a></li>
-<li class="chapter" data-level="4.2" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#index"><i class="fa fa-check"></i><b>4.2</b> Index</a></li>
-<li class="chapter" data-level="4.3" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#pages"><i class="fa fa-check"></i><b>4.3</b> Pages</a></li>
-<li class="chapter" data-level="4.4" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#styling"><i class="fa fa-check"></i><b>4.4</b> Styling</a>
+<li class="chapter" data-level="4.1" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#create-index.rmd"><i class="fa fa-check"></i><b>4.1</b> 1. Create index.Rmd</a></li>
+<li class="chapter" data-level="4.2" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#site-yaml"><i class="fa fa-check"></i><b>4.2</b> 2. Site YAML</a></li>
+<li class="chapter" data-level="4.3" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#set-up-github-pages-setting"><i class="fa fa-check"></i><b>4.3</b> 3. Set up GitHub Pages setting</a></li>
+<li class="chapter" data-level="4.4" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#rendering"><i class="fa fa-check"></i><b>4.4</b> 4. Rendering</a></li>
+<li class="chapter" data-level="4.5" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#themes-styles-bells-whistles"><i class="fa fa-check"></i><b>4.5</b> Themes, styles, bells, whistles</a>
 <ul>
-<li class="chapter" data-level="4.4.1" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#html"><i class="fa fa-check"></i><b>4.4.1</b> HTML</a></li>
-<li class="chapter" data-level="4.4.2" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#css"><i class="fa fa-check"></i><b>4.4.2</b> CSS</a></li>
+<li class="chapter" data-level="4.5.1" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#html"><i class="fa fa-check"></i><b>4.5.1</b> HTML</a></li>
+<li class="chapter" data-level="4.5.2" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#css"><i class="fa fa-check"></i><b>4.5.2</b> CSS</a></li>
 </ul></li>
-<li class="chapter" data-level="4.5" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#rendering"><i class="fa fa-check"></i><b>4.5</b> Rendering</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="blogdown-bookdown.html"><a href="blogdown-bookdown.html"><i class="fa fa-check"></i><b>5</b> Blogdown &amp; bookdown</a></li>
 <li class="divider"></li>
@@ -221,32 +221,61 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="basic-webpage-ingredients" class="section level1 hasAnchor" number="4">
 <h1><span class="header-section-number">4</span> Basic webpage ingredients<a href="basic-webpage-ingredients.html#basic-webpage-ingredients" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>In this section we are going to go over how to take a typical R Project directory and make it ready to be rendered with GitHub Pages.</p>
-<div id="site-yaml" class="section level2 hasAnchor" number="4.1">
-<h2><span class="header-section-number">4.1</span> 1. Site YAML<a href="basic-webpage-ingredients.html#site-yaml" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>We learned about YAMLs when we talked about Rmds: Every Rmd has a YAML that helps guide the knitting process, providing document metadata and knitting architecture.</p>
-<p>Add in the output dir</p>
+<p>In this section we are going to go over how to turn our directory into one that is ready to be rendered with GitHub Pages. To do this, we need to do a few things:</p>
+<ol style="list-style-type: decimal">
+<li>Create an index.Rmd<br />
+</li>
+<li>Create a YAML for the whole site<br />
+</li>
+<li>Set up Pages setting in GitHub</li>
+<li>(Optional) Themes and styles</li>
+</ol>
+<div id="create-index.rmd" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> 1. Create index.Rmd<a href="basic-webpage-ingredients.html#create-index.rmd" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This index.Rmd is a location in the directory that Rmarkdown wants to point to as the ‘Home’ or splash page of the site. This index.Rmd is just like any other R Markdown file, but when the website builds, the build knows to associate the index.Rmd (and index.html) with your home or ‘title’ page. We’ll see that in just a moment.</p>
+<p>Just like with any other R Markdown, go to <strong>File &gt; New File &gt; R Markdown</strong>, enter in whatever text you would like as your home page, then save it as ‘index.Rmd’.</p>
 </div>
-<div id="index" class="section level2 hasAnchor" number="4.2">
-<h2><span class="header-section-number">4.2</span> Index<a href="basic-webpage-ingredients.html#index" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Index is your splash page</p>
+<div id="site-yaml" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> 2. Site YAML<a href="basic-webpage-ingredients.html#site-yaml" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>We learned about YAMLs when we talked about Rmds: Every Rmd has a YAML that helps guide the knitting process, providing document metadata and knitting architecture. For our website, we are going to make a site YAML on our own, which will be a standalone file. This provides the <em>site</em> with metadata and knitting architecture.</p>
+<p>To create a site YAML, <strong>File &gt; New file &gt; Text File</strong>, which should open up a plain text file. Then we want to save this with the exact name: ’_site.yml’. The .yml extension makes this a YAML file for the site.</p>
+<p>Inside this site YAML we are going to add some information: 1) the name and navigation bar and 2) the output directory. First, the name is what appears on the ‘tab’ when you open the site, then the title and text on the navigation bar (navbar) are what will top your site. <strong>Note: Spaces matter here!</strong> Start by copying and pasting this text to make sure you’ve got it right, then edit from there. Note that we are adding the <em>.html</em> of our files as our href pointer. An href is how we identify the target to link to in website building. It is what will become a part of the URL, when all is said and done. So also bear in mind for what you name your files. Even if you hide that name using the ‘text’ part of the yaml, the HTML file name will still be in your URL!</p>
+<pre><code>name: &quot;Liza&#39;s website&quot;
+navbar:
+  title: &quot;Liza Wood&quot;
+  left:
+    - text: &quot;About&quot;
+      href: about.html
+    - text: &quot;Research&quot;
+      href: research.html</code></pre>
+<p>Second, below this first section, we are going to space down to add another argument to specify the output directory. Notice that right now, because we’ve just been knitting our Rmd in no fancy way, the .Rmd and .html files are side by side in our main directory. That can get messy, so instead we want to specify a place where the .html versions of the pages go when they knit. First, let’s manually make that destination by creating a new folder in your directory called ‘docs’. Once we have that folder, we can specify this as the output directory of our knitted files by entering the following within the YAML with the following line:</p>
+<pre><code>output_dir: &#39;docs&#39;</code></pre>
 </div>
-<div id="pages" class="section level2 hasAnchor" number="4.3">
-<h2><span class="header-section-number">4.3</span> Pages<a href="basic-webpage-ingredients.html#pages" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>These are your Rmd files, where each file is a oage</p>
+<div id="set-up-github-pages-setting" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> 3. Set up GitHub Pages setting<a href="basic-webpage-ingredients.html#set-up-github-pages-setting" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>We’re almost there! Let’s navigate to the GitHub repository of this site, then to the <strong>Settings</strong> of the repository. Then on the left hand, navigate to <strong>Pages</strong>. In the Pages Settings there is a section for Build and deployment. As a default, GitHut ‘deploys’ the website from the main branch and root directory. BUT, we want GitHub to deploy from a different directory on the main branch, <strong>the docs directory</strong>. So drop down the options where ‘root’ is selected, and switch that to ‘docs’. Notice that docs is your only option. As far as I understand, this is a standard directory name for outputs that GitHub Pages can easily point to – this is why we named out directory ‘docs’.</p>
+<p><img src="imgs/change_docs.png" width="100%" style="display: block; margin: auto;" /></p>
 </div>
-<div id="styling" class="section level2 hasAnchor" number="4.4">
-<h2><span class="header-section-number">4.4</span> Styling<a href="basic-webpage-ingredients.html#styling" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="html" class="section level3 hasAnchor" number="4.4.1">
-<h3><span class="header-section-number">4.4.1</span> HTML<a href="basic-webpage-ingredients.html#html" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="rendering" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> 4. Rendering<a href="basic-webpage-ingredients.html#rendering" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Now, we’re all set. The last thing we need to do it <strong>render the site</strong>, so that it all knits at once, and then add, commit, and push that rendered site up to GitHub for hosting. First to render the site, we’re going to use the following function <em>in the Console</em>:</p>
+<pre><code>rmarkdown::render_site()</code></pre>
+<p>You’ll be able to see from the output what is happening. Each page is rendered (knit) and a new output is created, the HTML version of each R Markdown, stored in the docs/ directory. Once everything is up-to-date, you can <strong>switch over the Terminal</strong> and follow our git instructions:</p>
+<pre><code>git add .
+git commit -m &#39;rendering site for first time&#39;
+git push</code></pre>
+<p>Now you may need to give it a few seconds, but now your site is live! You can navigate to your site by again entering your GitHub repository <strong>Settings &gt; Pages</strong> and then you’ll notice a link to ‘Visit site’. That should route you to the following site <a href="https://USERNAME.github.io/" class="uri">https://USERNAME.github.io/</a>.</p>
+<p>If you see your site live, then you’ve done it! And you have all of the foundational tools to continue to build out your site.</p>
 </div>
-<div id="css" class="section level3 hasAnchor" number="4.4.2">
-<h3><span class="header-section-number">4.4.2</span> CSS<a href="basic-webpage-ingredients.html#css" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="themes-styles-bells-whistles" class="section level2 hasAnchor" number="4.5">
+<h2><span class="header-section-number">4.5</span> Themes, styles, bells, whistles<a href="basic-webpage-ingredients.html#themes-styles-bells-whistles" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="html" class="section level3 hasAnchor" number="4.5.1">
+<h3><span class="header-section-number">4.5.1</span> HTML<a href="basic-webpage-ingredients.html#html" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 </div>
-</div>
-<div id="rendering" class="section level2 hasAnchor" number="4.5">
-<h2><span class="header-section-number">4.5</span> Rendering<a href="basic-webpage-ingredients.html#rendering" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="css" class="section level3 hasAnchor" number="4.5.2">
+<h3><span class="header-section-number">4.5.2</span> CSS<a href="basic-webpage-ingredients.html#css" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 
+</div>
 </div>
 </div>
             </section>
