@@ -130,8 +130,8 @@ Your branch is up to date with 'origin/main'.
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
-        .Rproj.user/84604AD9/sources/session-b7b5e526/C5AB7D86
-        .Rproj.user/84604AD9/sources/session-b7b5e526/C5AB7D86-contents
+        .Rproj.user/
+        liza-instructor.github.io.Rproj
         workshop_notes.R
 
 no changes added to commit (use "git add" and/or "git commit -a")
@@ -156,6 +156,7 @@ Your branch is up to date with 'origin/main'.
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
         .gitignore
+        liza-instructor.github.io.Rproj
         workshop_notes.R
 
 no changes added to commit (use "git add" and/or "git commit -a")
@@ -186,6 +187,7 @@ Changes to be committed:
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
         .gitignore
+        liza-instructor.github.io.Rproj
 ```
 
 More often than not, I want to add all of my untracked files at once. So instead of listing them out one by one, we can use file path speak for "take them all", which is the period (.). 
@@ -273,8 +275,7 @@ So what have we done?
 
 3. Created a remote GitHub repository and then linked the local and remote repositories in Terminal.  
 
-
-Now within our project, we can save and updates files, and as we do, follow the three key steps to keep our local and remote repositories tracking our work and in sync with one another:
+** Check your GitHub webpage to see the updates have been pushed in real time**. If they have, you're all set.Now within our project, we can save and updates files, and as we do, follow the three key steps to keep our local and remote repositories tracking our work and in sync with one another:
 
 ```
 git add .
@@ -311,6 +312,7 @@ knitr::include_graphics("imgs/git_select.png")
 knitr::include_graphics("imgs/paste_ssh.png")
 ```
 
+<!---
 ## Why did I do this?
 
 **Project management**
@@ -320,3 +322,4 @@ knitr::include_graphics("imgs/paste_ssh.png")
 **Collaboration**
 
 **Hosting websites**
+--->

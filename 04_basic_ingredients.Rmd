@@ -1,10 +1,20 @@
 # Basic webpage ingredients
 
-## Site YAML
+In this section we are going to go over how to take a typical R Project directory and make it ready to be rendered with GitHub Pages. 
+
+## 1. Site YAML
+
+We learned about YAMLs when we talked about Rmds: Every Rmd has a YAML that helps guide the knitting process, providing document metadata and knitting architecture. 
+
+Add in the output dir
 
 ## Index
 
+Index is your splash page
+
 ## Pages
+
+These are your Rmd files, where each file is a oage
 
 ## Styling
 

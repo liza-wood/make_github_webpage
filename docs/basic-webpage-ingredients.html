@@ -23,7 +23,7 @@
 <meta name="author" content="Liza Wood" />
 
 
-<meta name="date" content="2023-06-08" />
+<meta name="date" content="2023-06-16" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -168,17 +168,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.3.1" data-path="project-management-git-and-github.html"><a href="project-management-git-and-github.html#create-a-remote-repository"><i class="fa fa-check"></i><b>2.3.1</b> Create a remote repository</a></li>
 <li class="chapter" data-level="2.3.2" data-path="project-management-git-and-github.html"><a href="project-management-git-and-github.html#do-it-all-in-reverse"><i class="fa fa-check"></i><b>2.3.2</b> Do it all in reverse</a></li>
 </ul></li>
-<li class="chapter" data-level="2.4" data-path="project-management-git-and-github.html"><a href="project-management-git-and-github.html#why-did-i-do-this"><i class="fa fa-check"></i><b>2.4</b> Why did I do this?</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="rmd.html"><a href="rmd.html"><i class="fa fa-check"></i><b>3</b> Rmd</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="rmd.html"><a href="rmd.html#r"><i class="fa fa-check"></i><b>3.1</b> R</a></li>
-<li class="chapter" data-level="3.2" data-path="rmd.html"><a href="rmd.html#markdown"><i class="fa fa-check"></i><b>3.2</b> Markdown</a></li>
-<li class="chapter" data-level="3.3" data-path="rmd.html"><a href="rmd.html#r-markdown"><i class="fa fa-check"></i><b>3.3</b> R + markdown</a></li>
+<li class="chapter" data-level="3.1" data-path="rmd.html"><a href="rmd.html#markdown"><i class="fa fa-check"></i><b>3.1</b> Markdown</a></li>
+<li class="chapter" data-level="3.2" data-path="rmd.html"><a href="rmd.html#markdown-r-rmarkdown-or-rmd"><i class="fa fa-check"></i><b>3.2</b> Markdown + R = RMarkdown (or Rmd)</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="rmd.html"><a href="rmd.html#mixing-markdown-text-and-code"><i class="fa fa-check"></i><b>3.2.1</b> Mixing markdown text and code</a></li>
+<li class="chapter" data-level="3.2.2" data-path="rmd.html"><a href="rmd.html#the-yaml"><i class="fa fa-check"></i><b>3.2.2</b> The YAML</a></li>
+<li class="chapter" data-level="3.2.3" data-path="rmd.html"><a href="rmd.html#setup-chunk"><i class="fa fa-check"></i><b>3.2.3</b> Setup chunk</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="rmd.html"><a href="rmd.html#lets-make-some-webpage-rmds"><i class="fa fa-check"></i><b>3.3</b> Let’s make some webpage Rmds</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="rmd.html"><a href="rmd.html#make-an-about-page"><i class="fa fa-check"></i><b>3.3.1</b> Make an ‘About’ page</a></li>
+<li class="chapter" data-level="3.3.2" data-path="rmd.html"><a href="rmd.html#make-a-research-page"><i class="fa fa-check"></i><b>3.3.2</b> Make a ‘research’ page</a></li>
+<li class="chapter" data-level="3.3.3" data-path="rmd.html"><a href="rmd.html#knitting-each-file"><i class="fa fa-check"></i><b>3.3.3</b> Knitting each file</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="rmd.html"><a href="rmd.html#check-in-2"><i class="fa fa-check"></i><b>3.4</b> Check in</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html"><i class="fa fa-check"></i><b>4</b> Basic webpage ingredients</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#site-yaml"><i class="fa fa-check"></i><b>4.1</b> Site YAML</a></li>
+<li class="chapter" data-level="4.1" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#site-yaml"><i class="fa fa-check"></i><b>4.1</b> 1. Site YAML</a></li>
 <li class="chapter" data-level="4.2" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#index"><i class="fa fa-check"></i><b>4.2</b> Index</a></li>
 <li class="chapter" data-level="4.3" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#pages"><i class="fa fa-check"></i><b>4.3</b> Pages</a></li>
 <li class="chapter" data-level="4.4" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#styling"><i class="fa fa-check"></i><b>4.4</b> Styling</a>
@@ -211,14 +221,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="basic-webpage-ingredients" class="section level1 hasAnchor" number="4">
 <h1><span class="header-section-number">4</span> Basic webpage ingredients<a href="basic-webpage-ingredients.html#basic-webpage-ingredients" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>In this section we are going to go over how to take a typical R Project directory and make it ready to be rendered with GitHub Pages.</p>
 <div id="site-yaml" class="section level2 hasAnchor" number="4.1">
-<h2><span class="header-section-number">4.1</span> Site YAML<a href="basic-webpage-ingredients.html#site-yaml" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<h2><span class="header-section-number">4.1</span> 1. Site YAML<a href="basic-webpage-ingredients.html#site-yaml" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>We learned about YAMLs when we talked about Rmds: Every Rmd has a YAML that helps guide the knitting process, providing document metadata and knitting architecture.</p>
+<p>Add in the output dir</p>
 </div>
 <div id="index" class="section level2 hasAnchor" number="4.2">
 <h2><span class="header-section-number">4.2</span> Index<a href="basic-webpage-ingredients.html#index" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Index is your splash page</p>
 </div>
 <div id="pages" class="section level2 hasAnchor" number="4.3">
 <h2><span class="header-section-number">4.3</span> Pages<a href="basic-webpage-ingredients.html#pages" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>These are your Rmd files, where each file is a oage</p>
 </div>
 <div id="styling" class="section level2 hasAnchor" number="4.4">
 <h2><span class="header-section-number">4.4</span> Styling<a href="basic-webpage-ingredients.html#styling" class="anchor-section" aria-label="Anchor link to header"></a></h2>

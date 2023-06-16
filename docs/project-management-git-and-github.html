@@ -23,7 +23,7 @@
 <meta name="author" content="Liza Wood" />
 
 
-<meta name="date" content="2023-06-08" />
+<meta name="date" content="2023-06-16" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -168,17 +168,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.3.1" data-path="project-management-git-and-github.html"><a href="project-management-git-and-github.html#create-a-remote-repository"><i class="fa fa-check"></i><b>2.3.1</b> Create a remote repository</a></li>
 <li class="chapter" data-level="2.3.2" data-path="project-management-git-and-github.html"><a href="project-management-git-and-github.html#do-it-all-in-reverse"><i class="fa fa-check"></i><b>2.3.2</b> Do it all in reverse</a></li>
 </ul></li>
-<li class="chapter" data-level="2.4" data-path="project-management-git-and-github.html"><a href="project-management-git-and-github.html#why-did-i-do-this"><i class="fa fa-check"></i><b>2.4</b> Why did I do this?</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="rmd.html"><a href="rmd.html"><i class="fa fa-check"></i><b>3</b> Rmd</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="rmd.html"><a href="rmd.html#r"><i class="fa fa-check"></i><b>3.1</b> R</a></li>
-<li class="chapter" data-level="3.2" data-path="rmd.html"><a href="rmd.html#markdown"><i class="fa fa-check"></i><b>3.2</b> Markdown</a></li>
-<li class="chapter" data-level="3.3" data-path="rmd.html"><a href="rmd.html#r-markdown"><i class="fa fa-check"></i><b>3.3</b> R + markdown</a></li>
+<li class="chapter" data-level="3.1" data-path="rmd.html"><a href="rmd.html#markdown"><i class="fa fa-check"></i><b>3.1</b> Markdown</a></li>
+<li class="chapter" data-level="3.2" data-path="rmd.html"><a href="rmd.html#markdown-r-rmarkdown-or-rmd"><i class="fa fa-check"></i><b>3.2</b> Markdown + R = RMarkdown (or Rmd)</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="rmd.html"><a href="rmd.html#mixing-markdown-text-and-code"><i class="fa fa-check"></i><b>3.2.1</b> Mixing markdown text and code</a></li>
+<li class="chapter" data-level="3.2.2" data-path="rmd.html"><a href="rmd.html#the-yaml"><i class="fa fa-check"></i><b>3.2.2</b> The YAML</a></li>
+<li class="chapter" data-level="3.2.3" data-path="rmd.html"><a href="rmd.html#setup-chunk"><i class="fa fa-check"></i><b>3.2.3</b> Setup chunk</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="rmd.html"><a href="rmd.html#lets-make-some-webpage-rmds"><i class="fa fa-check"></i><b>3.3</b> Let’s make some webpage Rmds</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="rmd.html"><a href="rmd.html#make-an-about-page"><i class="fa fa-check"></i><b>3.3.1</b> Make an ‘About’ page</a></li>
+<li class="chapter" data-level="3.3.2" data-path="rmd.html"><a href="rmd.html#make-a-research-page"><i class="fa fa-check"></i><b>3.3.2</b> Make a ‘research’ page</a></li>
+<li class="chapter" data-level="3.3.3" data-path="rmd.html"><a href="rmd.html#knitting-each-file"><i class="fa fa-check"></i><b>3.3.3</b> Knitting each file</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="rmd.html"><a href="rmd.html#check-in-2"><i class="fa fa-check"></i><b>3.4</b> Check in</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html"><i class="fa fa-check"></i><b>4</b> Basic webpage ingredients</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#site-yaml"><i class="fa fa-check"></i><b>4.1</b> Site YAML</a></li>
+<li class="chapter" data-level="4.1" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#site-yaml"><i class="fa fa-check"></i><b>4.1</b> 1. Site YAML</a></li>
 <li class="chapter" data-level="4.2" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#index"><i class="fa fa-check"></i><b>4.2</b> Index</a></li>
 <li class="chapter" data-level="4.3" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#pages"><i class="fa fa-check"></i><b>4.3</b> Pages</a></li>
 <li class="chapter" data-level="4.4" data-path="basic-webpage-ingredients.html"><a href="basic-webpage-ingredients.html#styling"><i class="fa fa-check"></i><b>4.4</b> Styling</a>
@@ -282,8 +292,8 @@ Your branch is up to date with &#39;origin/main&#39;.
 
 Untracked files:
   (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
-        .Rproj.user/84604AD9/sources/session-b7b5e526/C5AB7D86
-        .Rproj.user/84604AD9/sources/session-b7b5e526/C5AB7D86-contents
+        .Rproj.user/
+        liza-instructor.github.io.Rproj
         workshop_notes.R
 
 no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)</code></pre>
@@ -298,6 +308,7 @@ Your branch is up to date with &#39;origin/main&#39;.
 Untracked files:
   (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
         .gitignore
+        liza-instructor.github.io.Rproj
         workshop_notes.R
 
 no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)</code></pre>
@@ -316,7 +327,8 @@ Changes to be committed:
 
 Untracked files:
   (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
-        .gitignore</code></pre>
+        .gitignore
+        liza-instructor.github.io.Rproj</code></pre>
 <p>More often than not, I want to add all of my untracked files at once. So instead of listing them out one by one, we can use file path speak for “take them all”, which is the period (.).</p>
 <pre><code>git add .</code></pre>
 <p>Now we have added all untracked files. You can check git status again to verify.</p>
@@ -363,7 +375,7 @@ We are going to follow those instructions in the command line (Terminal).</p>
 <li><p>Initialized a local git repository with in that project folder using the <code>git init</code> command in Terminal.</p></li>
 <li><p>Created a remote GitHub repository and then linked the local and remote repositories in Terminal.</p></li>
 </ol>
-<p>Now within our project, we can save and updates files, and as we do, follow the three key steps to keep our local and remote repositories tracking our work and in sync with one another:</p>
+<p>** Check your GitHub webpage to see the updates have been pushed in real time**. If they have, you’re all set.Now within our project, we can save and updates files, and as we do, follow the three key steps to keep our local and remote repositories tracking our work and in sync with one another:</p>
 <pre><code>git add .
 git commit -m &#39;message&#39;
 git push</code></pre>
@@ -383,15 +395,19 @@ git push</code></pre>
 <p><img src="imgs/copy_ssh.png" width="70%" style="display: block; margin: auto;" /></p>
 <p>Then in RStudio, we can <strong>File &gt; New Project</strong> but this time we will follow the <strong>Version Control</strong> path and select the <strong>Git</strong> option. You’ll then be prompted to paste in a Repository URL. This is where you paste in the SSH URL copied from GitHub. In some cases, the directory name automatically fills in with the repo name from GitHub. In other settings, you may need to type it. This will be the name of your projects’ directory. Last, you just have to click Create Project, and your repository from GitHub will be ‘cloned’ as a local repository, and the tether will be established so you can add, commit, and push all you want!</p>
 <p><img src="imgs/git_select.png" width="49%" /><img src="imgs/paste_ssh.png" width="49%" /></p>
-</div>
-</div>
-<div id="why-did-i-do-this" class="section level2 hasAnchor" number="2.4">
-<h2><span class="header-section-number">2.4</span> Why did I do this?<a href="project-management-git-and-github.html#why-did-i-do-this" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><strong>Project management</strong></p>
-<p><strong>Version control</strong></p>
-<p><strong>Collaboration</strong></p>
-<p><strong>Hosting websites</strong></p>
+<!---
+## Why did I do this?
 
+**Project management**
+
+**Version control**
+
+**Collaboration**
+
+**Hosting websites**
+--->
+
+</div>
 </div>
 </div>
             </section>
