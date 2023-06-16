@@ -1,25 +1,40 @@
 # Basic webpage ingredients
 
-In this section we are going to go over how to take a typical R Project directory and make it ready to be rendered with GitHub Pages. 
+In this section we are going to go over how to turn our directory into one that is ready to be rendered with GitHub Pages. To do this, we need to do a few things:
+
+1. Create an index.Rmd  
+2. Create a YAML for the whole site  
+3. Set up Pages setting in GitHub
+4. (Optional) Themes and styles  
+
 
 ## 1. Site YAML
 
-We learned about YAMLs when we talked about Rmds: Every Rmd has a YAML that helps guide the knitting process, providing document metadata and knitting architecture. 
+We learned about YAMLs when we talked about Rmds: Every Rmd has a YAML that helps guide the knitting process, providing document metadata and knitting architecture. For our website, we are going to make a site YAML on our own, which will be a standalone file. This provides the _site_ with metadata and knitting architecture. 
+
+To create a site YAML, **File > New file > Text File**, which should open up a plain text file. Then we want to save this with the exact name: '_site.yml'. The .yml extension makes this a YAML file for the site. Inside this site YAML we are going to add some information: the name and navigation bar, the output directory. The name is what appears on the 'tab' when you open the site, then the title and text on the navigation bar (navbar) are what will top your site. **Note: Spaces matter here!** Start by copying and pasting this text to make sure you've got it right, then edit from there.
+
+```
+name: "Liza's website"
+navbar:
+  title: "Liza Wood"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+```
 
 Add in the output dir
-
-## Index
-
-Index is your splash page
 
 ## Pages
 
 These are your Rmd files, where each file is a oage
+
+## Rendering
 
 ## Styling
 
 ### HTML
 
 ### CSS
-
-## Rendering

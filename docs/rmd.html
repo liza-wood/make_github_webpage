@@ -252,6 +252,12 @@ summary(cars)
 </div>
 <div id="the-yaml" class="section level3 hasAnchor" number="3.2.2">
 <h3><span class="header-section-number">3.2.2</span> The YAML<a href="rmd.html#the-yaml" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<pre><code>---
+title: &quot;Test&quot;
+author: &quot;Liza Wood&quot;
+date: &quot;2023-06-16&quot;
+output: html_document
+---</code></pre>
 <p>YAMLs are part of the guiding architecture for your Rmd file, located at the very top, indicated by three dashes to begin and end, and it can contain a series of information bits about the markdown document in between. Most important for us is the output, which tells R the format to ‘render’ the document. (As it turns out, YAML means either ‘yet another markup language’ or ‘YAML ain’t a markup language’, which seems to involved a series of computer programmer jokes that I am not advanced enough to know the history behind).</p>
 <p>Beyond the basics that typically start in this default, what goes in a YAML also depends on the kind of output you have. We’ll just flag this here, because the <strong>yaml will become an important feature of the webpage.</strong> Here is a nice <a href="https://cran.r-project.org/web/packages/ymlthis/vignettes/yaml-fieldguide.html">‘field guide’ for YAMLS</a>, and it is worth noting that knitting to a PDF may require installations and management of <a href="https://bookdown.org/yihui/rmarkdown-cookbook/install-latex.html">LaTeX on your computer</a>, which we don’t do today.</p>
 </div>
