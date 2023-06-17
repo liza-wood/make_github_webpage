@@ -155,18 +155,9 @@ git commit -m 'adding CSS'
 git push
 ```
 
-*Notes on CSS:*  
-There is a lot to toggle around here, and I am not a CSS expert. I like the recommendation of the Bookdown appendix that recommends you to **use your Developer Tools of your browser.** You can use these to really look at the underlying HTML, and the associated CSS styling of any webpage, including your own! Let's take a look at my most recent version of my webpage (Note you need to look at it _rendered_, not just the HTML local to your computer).
-
-```{r , echo=FALSE, out.width = '100%', fig.align='center'}
-knitr::include_graphics("imgs/my_page.png")
-```
-
-Here we can see the HTML on the left of the Develop Tools screen, and on the right it reveals the CSS styling. It is a big complicated to navigate, but we can see the different elements and their properties. If you aren't sure where to start, you can take a look at the style already embedded in your site, then modify it. 
-
 ### In-line styling with HTML or CSS  
 
-It is worth noting that you can also add some custom styling per page, rather than globally. So while you may want your text to generally be green, you could change the text of one page to be green by putting CSS code in-line in a certain R Markdown page. For example, in your about R Markdown, you could add: 
+It is worth noting that you can also add some custom styling per page, rather than globally. So while you may want your text to generally be black, you could change the text of one page to be green by putting CSS code in-line in a certain R Markdown page. For example, in your about R Markdown, you could add: 
 
 ```
 \```{css, echo=FALSE}
@@ -176,6 +167,14 @@ p {
 \```
 ```
 
-### CSS templates  
+#### More on CSS   
+
+There is a lot to toggle around here, and I am not a CSS expert. I like the recommendation of the Bookdown appendix that recommends you to **use your Developer Tools of your browser.** You can use these to really look at the underlying HTML, and the associated CSS styling of any webpage, including your own! Let's take a look at my most recent version of my webpage (Note you need to look at it _rendered_, not just the HTML local to your computer).
+
+```{r , echo=FALSE, out.width = '100%', fig.align='center'}
+knitr::include_graphics("imgs/my_page.png")
+```
+
+Here we can see the HTML on the left of the Develop Tools screen, and on the right it reveals the CSS styling. It is a big complicated to navigate, but we can see the different elements and their properties. If you aren't sure where to start, you can take a look at the style already embedded in your site, then modify it. 
 
 Another useful way of learning CSS is to find sites you like, look at their sites via Developer Tools, and perhaps even go find their CSS styling code, if available like on GitHub. Similarly, there as [CSS templates](https://www.w3schools.com/css/css_templates.asp) out there. Because it is another language, it will inevitebly take some time to get used to, but don't be discouraged!  
