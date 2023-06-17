@@ -6,7 +6,7 @@ This section is going to introduce us to to RMarkdown, the file type we'll be us
 
 Markdown is a 'markup' language to add formatting elements to plain text documents. This means that we can add format to documents we are creating by knowing the right codes. 
 
-One of the most common kinds of basic markdown files are README files. In R and GitHub, you are encouraged to create a README document to record relevant information (or metadata) about a certain R project/Git Repository. For our webpage repository, we should only have the notes R script that we're working on. Let's make a README markdown.
+One of the most common kinds of basic markdown files are README files. In R and GitHub, you are encouraged to create a README document to record relevant information (or metadata) about a certain R project/Git Repository. So, let's make a README markdown.
 
 Open up a blank markdown file by following: **File > New File > Markdown File**. Inside this markdown file we can write up a brief summary of this repository and practice some of the markdown skills. There are several [markdown cheat sheets](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) out there that you can search to wrap your head around the basics of the language. 
 
@@ -52,7 +52,7 @@ summary(cars)
 
 Let's go ahead and click the 'Knit' icon to 'render' this document to see what our out looks like, and then we can discuss some of the added features that help knitting happen. 
 
-```{r, echo = F, fig.align = 'center'}
+```{r, echo = F, fig.align = 'center', fig.cap = 'Artwork by @allison_horst'}
 knitr::include_graphics("imgs/rmd_hp.png")
 ```
 
@@ -95,8 +95,9 @@ We are going to practice working with R Markdown files by drafting up two pages 
 
 ### Make an 'About' page  
 
-First, let's open a new R Markdown file, title it "About", and importantly, let's save it right away with the name 'about.Rmd'. **The names that we assign to our markdown files will be important for our website index shortly**. Let's use this page primarily as a space for practicing Markdown (i.e. maybe don't use code here). Write up a brief summary profile, and you may want to use some formatting features. You can do this in Markdown yourself or toggle over to the Visual option and use those features.  
+First, let's open a new R Markdown file, title it "About", and importantly, let's save it right away with the name 'about.Rmd'. **The names that we assign to our markdown files will be important for our website architecture shortly**. Let's use this page primarily as a space for practicing Markdown (i.e. maybe don't use code here). Write up a brief summary profile, and you may want to use some formatting features. You can do this in Markdown yourself or toggle over to the Visual option and use those features.  
 
+<!---
 Some of the things you may want to do include:  
 
 * Linking content. You can link content in text by...  
@@ -107,6 +108,7 @@ Some of the things you may want to do include:
 knitr::include_graphics("img/photo.png")
 \```
 ```
+--->
 
 ### Make a 'research' page  
 
@@ -114,18 +116,17 @@ To practice embedding code into a page, also try to make some kind of research p
 
 If you have your own data you'd like to work with, this is a good time to get organized in your working directories. Data management on GitHub can be tough. On this **public** repository, you likely don't want to place and upload your research data into a data folder for anyone to see. Be careful here! Here are two recommendations:
 
-1. Create a data folder and immediately add it to your .gitignore. You should open your .gitignore file and add the following line (under what we've already added for the Rproj.)
+1. Create a folder named 'data' and immediately add it to your .gitignore. You should open your .gitignore file and add the following line (under what we've already added for the Rproj.). This should set you up so that git is never tracking your data folder, and it won't be pushed to GitHub when you push your other files, even if you ask git to add 'all' of the files with `git add .`. 
 
 ```
 .Rproj.user
 data/
 ```
 
-This should set you up so that git is never tracking your data, and it won't be pushed to GitHub when you push your other files, even if you ask git to add 'all' of the files with `git add .`.  
+2. Get yourself organized with Box Drive, Google Drive, or whatever cloud service you work with. Most cloud services have ways of getting data from the cloud right into R. If you work with Box, I recommend downloading Box Drive, which then allows you to create a file path straight to Box in R. Alternatively if you are a Drive person, you can use the `googlesheets4` package to read in data right from your Drive URLs.  
 
-2. Get yourself organized with Box Drive, Google Streaming, or whatever cloud service you work with. Most cloud services have ways of getting data from the cloud right into R. If you work with Box, I recommend downloading Box Drive, which then allows you to create a filepath straight to Box in R. Alternatively if you are a Drive person, your can use the `googlesheets4` package. 
+Once you have your data decision (built in R data like penguins, or your own data), try using it to write something up. Check out some of the options for formatting on pages like this:  
 
-Once you have your data decision (built in R data like penguins, or your own data), try using it to write something up. Check out some of the options for formatting on pages like this:   
 * [Pimp my Rmd](https://holtzy.github.io/Pimp-my-rmd/)  
 * [Rmd Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/)  
   * For example, [add tabs within a page](https://bookdown.org/yihui/rmarkdown-cookbook/html-tabs.html)   
@@ -134,16 +135,19 @@ Once you have your data decision (built in R data like penguins, or your own dat
 
 After we've taken some time to develop drafts of these two pages and experiment with various markdown features, let's get those drafts _knitted_. In fact, you will likely benefit from knitting often so that if something is breaking the knit, you can catch it earlier rather than later. tl;dr **knit early and often**.  
 
-As you knit, notice that a second file is created in your directoy: the HTML version of the Rmd. It has the same name as the file, but now it has a .html extension. You can open that in your web browset to see how it renders, but if you look at the file itself it will just be a load of HTML (hard to actually read).  
+Knit the file by clicking the knit button at the top/center of the RMarkdown file. You should see processing output, and eventual success (hopefully), print in the console.  
+
+As you knit, notice that a second file is created in your directory: the HTML version of the Rmd. It has the same name as the file, but now it has a .html extension. You can open that in your web browser to see how it renders, but if you look at the file itself it will just be a load of HTML (hard to actually read).  
 
 If your knitting is broken:  
+
 * Read the error. Often the error message will call attention to the line in the document that is breaking the knit. If it is in within a code chunk, it will point to the first line in the code chunk that is breaking.  
   * If it is the code, common challenges may have to do with getting your working directory and file paths correct, and/or having code out of order. When your Rmd knits it starts fresh, from the top. So all relevant objects need to be available to R in the order that the code runs, from top to bottom.  
 * Don't name two different code chunks with the same name. For example, don't have 2 chunks called setup. Each name needs to be unique.  
 
-## Check in  
+#### Check in  
 
-The next section now build out this repository to make it ready for actually being a website! Before we get into that, let's make sure we all have the same files in our directories. Your Files pane should look a lot like this:
+The next section is about how to build out this repository to make it ready for actually being a website! Before we get into that, let's make sure we all have the same files in our directories. Your Files pane should look a lot like this:
 
 ```{r, echo = F, fig.align = 'center'}
 knitr::include_graphics("imgs/presite_dir.png")

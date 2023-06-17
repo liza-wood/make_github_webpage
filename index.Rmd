@@ -39,7 +39,7 @@ output:
 
 10:45-11:30 Rmd -- constructing pages for website
 
-11:30-12:30 Website ingredients -- turning Rmd into a renderable sit
+11:30-12:30 Website ingredients -- turning Rmd into a render-able site
 
 12:30-1:00 Lunch break
 

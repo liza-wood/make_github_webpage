@@ -1,3 +1,5 @@
+fig:unnamed-chunk-11
+fig:unnamed-chunk-3
 set-up
 r-rstudio
 git
@@ -6,12 +8,13 @@ ssh
 project-management-git-and-github
 organizing-rstudio-with-projects
 where-am-i-getting-to-know-your-file-paths
+check-in
 file-paths-feel-complicated-enter-r-projects
 git-as-local-version-control
-check-in
+check-in-1
 connecting-remotely-to-github
 create-a-remote-repository
-check-in-1
+check-in-2
 do-it-all-in-reverse
 rmd
 markdown
@@ -23,7 +26,7 @@ lets-make-some-webpage-rmds
 make-an-about-page
 make-a-research-page
 knitting-each-file
-check-in-2
+check-in-3
 basic-webpage-ingredients
 create-index.rmd
 site-yaml
@@ -31,5 +34,6 @@ set-up-github-pages-setting
 rendering
 themes-styles-bells-whistles
 themes
-in-line-styling-with-html-or-css
 global-styling-with-css
+in-line-styling-with-html-or-css
+css-templates
