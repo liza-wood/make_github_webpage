@@ -177,4 +177,4 @@ knitr::include_graphics("imgs/my_page.png")
 
 Here we can see the HTML on the left of the Develop Tools screen, and on the right it reveals the CSS styling. It is a big complicated to navigate, but we can see the different elements and their properties. If you aren't sure where to start, you can take a look at the style already embedded in your site, then modify it. 
 
-Another useful way of learning CSS is to find sites you like, look at their sites via Developer Tools, and perhaps even go find their CSS styling code, if available like on GitHub. Similarly, there as [CSS templates](https://www.w3schools.com/css/css_templates.asp) out there. Because it is another language, it will inevitebly take some time to get used to, but don't be discouraged!  
+Another useful way of learning CSS is to find sites you like, look at their sites via Developer Tools, and perhaps even go find their CSS styling code, if available like on GitHub. Similarly, there as [CSS templates](https://www.w3schools.com/css/css_templates.asp) out there. Because it is another language, it will inevitably take some time to get used to, but don't be discouraged!  
