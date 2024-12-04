@@ -1,0 +1,11 @@
+cff-version: 1.0.0
+message: "If you reference this page, please cite it as below."
+authors:
+- family-names: "Wood"
+  given-names: "Liza"
+  orcid: "https://orcid.org/0000-0003-4325-6498"
+title: "Making websites with Rmd & GitHub"
+version: 1.0.0
+doi: 10.5281/zenodo.1234
+date-released: 2024-12-04
+url: "https://github.com/liza-wood/make_github_webpage"
